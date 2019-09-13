@@ -15,12 +15,21 @@ This page contains the code used in the work ["Learning Explicit and Implicit St
 Prerequisite: Python (3.5 or later), PyTorch (1.0 or later)
 
 Run the following command to try out our model in the paper.
+
+*English*
 ```sh
-TODO
+./exp_en.sh
 ```
+
+*Spanish*
+```sh
+./exp_es.sh
+```
+
 After the training is complete, type the following command to display the result on test data. The performance outputed by conlleval.pl is shown as below.
 ```sh
-TODO
+tail -n 50 2019_en_ei.log
+tail -n 50 2019_es_ei.log
 ```
 
 
@@ -32,9 +41,13 @@ The source code is written in PyTorch.
 
 ## Data
 
-TODO
+The **data** is stored in "data/ts" folder for English and Spanish. 
 
-The **data** is stored in "data" folder containing "train.txt", "dev.txt" and "test.txt". The embedding file "giga.vec100" is also located in the folder "data".
+The embedding files need to be stored in the folder "embedding".
+
+Download English Embedding (Glove 100) [https://drive.google.com/file/d/18ivfhXW0GpsBnDwvao-XNfm0P0d9592b/view?usp=sharing]
+
+Download Spanish Embedding [https://drive.google.com/file/d/1uYCPv3_-ZwcYJ2Ga8DcmPoxi4SgIeLX2/view?usp=sharing]
 
 
 ## Citation
